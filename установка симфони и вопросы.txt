@@ -1,0 +1,14 @@
+Заметки по установке Symfony 2
+
+- ошибка AppKernel не загружается сущьность 
++ решение файл comoser.json строка 
+"autoload": {
+        "psr-4": {
+			"AppBundle": "src/AppBundle" - // 1. это меняем 
+            "": "src/" - 2. на это
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
