@@ -3,6 +3,17 @@ blog_home:
     defaults: { _controller: BlogBundle:page }
     requirements:
              methods:  GET
+blog_about:
+    path:   /about
+    defaults: { _controller: BlogBundle:page }
+    requirements:
+         methods:  GET
+
+blog_contact:
+    path:   /contact
+    defaults: { _controller: BlogBundle:page }
+    requirements:
+         methods:  GET|POST
 
 blog_post:
     path: /post
@@ -12,8 +23,3 @@ blog_index:
     path: /start
     defaults: { _controller: BlogBundle:index }
 
-blog_about:
-    path:   /about
-    defaults: { _controller: BlogBundle:page }
-    requirements:
-         methods:  GET
